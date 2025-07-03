@@ -1,0 +1,130 @@
+#clients {
+  background-color: rgba(0, 0, 0, 0.13);
+  padding: 30px 0;
+}
+
+/* Slider */
+.custom-slide {
+  margin: 0 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.custom-slide img {
+  width: 100%;
+  display: block;
+  max-width: 70px; /* limit the max width to make logos smaller */
+  height: auto; /* maintain aspect ratio */
+}
+
+.custom-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.custom-slider .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-slider .slick-list:focus {
+  outline: none;
+}
+
+.custom-slider .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.custom-slider .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.custom-slider .slick-track:before,
+.custom-slider .slick-track:after {
+  display: table;
+  content: "";
+}
+
+.custom-slider .slick-track:after {
+  clear: both;
+}
+
+.custom-slider.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.custom-slider .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+[dir="rtl"] .custom-slider .slick-slide {
+  float: right;
+}
+
+.custom-slider .slick-slide img {
+  display: block;
+}
+
+.custom-slider .slick-slide.slick-loading img {
+  display: none;
+}
+
+.custom-slider .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.custom-slider.slick-initialized .slick-slide {
+  display: block;
+}
+
+.custom-slider.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.custom-slider.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.custom-slider .slick-arrow.slick-hidden {
+  display: none;
+}
+
+/* Slick specific styling for translation */
+.custom-slider .slick-track,
+.custom-slider .slick-list {
+  transform: translate3d(0, 0, 0);
+}
+
+.client-container {
+  padding-left: 350px;
+  padding-right: 350px;
+  box-sizing: border-box;
+}
+
+.custom-customer-logos {
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
