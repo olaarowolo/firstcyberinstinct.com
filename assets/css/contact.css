@@ -1,0 +1,117 @@
+/* Contact Page Styles */
+.text {
+    color: #ffffff;
+    width: 100%;
+    padding: 10px 0;
+    box-sizing: border-box;
+    flex: none;
+    max-width: none;
+  }
+
+.contact-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #a1a0a0;
+}
+
+
+
+.contact-form-section, .contact-info-section {
+    flex: 1 1 400px;
+    background-color: var(--bg-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f8f8f8;
+}
+
+.contact-form-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #e6e6e6;
+}
+
+.contact-form-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contact-form-section input[type="text"],
+.contact-form-section input[type="email"],
+.contact-form-section textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form-section input[type="text"]:focus,
+.contact-form-section input[type="email"]:focus,
+.contact-form-section textarea:focus {
+    border-color: #636363;
+    outline: none;
+}
+
+.contact-form-section button.btn-primary {
+    background-color: #0056b3;
+    color: white;
+    padding: 0.85rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-section button.btn-primary:hover {
+    background-color: #003d80;
+}
+
+.contact-info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.contact-info-section p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #fff;
+}
+
+.contact-info-section i {
+    color: #0056b3;
+    font-size: 1.3rem;
+}
+
+.map-container {
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
