@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 24px 10%;
-    background: #000;
+    background: #1b1b1bab;
     color: #fff;
     position: sticky;
     top: 0;
@@ -91,14 +91,21 @@
     }
   }
   
-  /* SMALLER SCREEN FONT ADJUSTMENTS */
-  @media (max-width: 600px) {
-    .nav-links a {
-      font-size: 14px;
-    }
-    .btn-cta {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
+/* SMALLER SCREEN FONT ADJUSTMENTS */
+@media (max-width: 600px) {
+  .nav-links a {
+    font-size: 14px;
   }
+  .btn-cta {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+/* Blur effect on navbar when scrolling */
+.navbar-blur {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  transition: background 0.3s ease;
+}
   

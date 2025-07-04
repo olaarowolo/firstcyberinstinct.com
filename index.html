@@ -45,11 +45,23 @@
             <li><a href="#clients">Clients</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="/contact.html">Contact</a></li>
-            <li><a href="#" class="btn-cta">Under Attack?</a></li>
+            <li><a href="/contact.html" class="btn-cta">Under Attack?</a></li>
           </ul>
         </nav>
-      </header>
-      
+</header>
+
+    <script>
+      // Add blur effect to navbar on scroll
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 10) {
+          navbar.classList.add('navbar-blur');
+        } else {
+          navbar.classList.remove('navbar-blur');
+        }
+      });
+    </script>
+
     <section id="nav-hero" class="hero-section">
         <div class="container">
           <div class="hero-content">
@@ -73,7 +85,7 @@
         <div class="client-container">
             <h2 class="centre">Our Clients</h2>
             <section class="custom-customer-logos custom-slider">
-                <div class="custom-slide"><img src="assets/img/clients/Microsoft.webp" alt="Microsoft Logo"></div>
+                <div class="custom-slide"><img src="assets/img/clients/microsoft.png" alt="Microsoft Logo"></div>
                 <div class="custom-slide"><img src="assets/img/clients/NatWest.jpg" alt="NatWest Logo"></div>
                 <div class="custom-slide"><img src="assets/img/clients/lightbridge.png" alt="Lightbridge Logo"></div>
                 <div class="custom-slide"><img src="assets/img/clients/Otaoilf.png" alt="Otaoilf Logo"></div>
@@ -95,7 +107,6 @@
                         <h3>SOC Building</h3>
                         <p>Building resilient security architectures tailored to your business, integrating the latest
                             technologies to fortify your digital defenses.
-                        </p><a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -108,7 +119,6 @@
                         <h3>Managed SOC Services</h3>
                         <p>Outsource your security operations to our expert team for proactive monitoring, threat
                             detection, and rapid incident response, ensuring continuous protection.
-                        </p><a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -124,7 +134,6 @@
                         </h3>
                         <p>Leveraging cloud technologies securely with our transformation services, ensuring a seamless
                             transition while maintaining rigorous security standards.
-                        </p><a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +147,6 @@
                         </h3>
                         <p>Building resilient security architectures tailored to your business, integrating the latest
                             technologies to fortify your digital defenses.
-                        </p><a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -167,7 +175,6 @@
                         </h3>
                         <p>Rapidly responding to cyber incidents and conducting thorough forensic investigations to
                             identify root causes and prevent future occurrences effectively.
-                        </p><a href="#">Read More</a>
                     </div>
                 </div>
             </div>
@@ -228,15 +235,15 @@
                     </nav>
                 </div>
             
-                <div class="footer-section">
-                    <h2 class="footer-category">Address</h2>
-                    <nav class="footer-list no-bullets" aria-label="Address Navigation">
-                        <ul>
-                            <li><a href="#" class="footer-link">London, United Kingdom</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+<div class="footer-section">
+    <h2 class="footer-category">Address</h2>
+    <nav class="footer-list no-bullets" aria-label="Address Navigation">
+        <ul>
+            <li><a href="#" class="footer-link">22b Sydenham Road, <br> London, United Kingdom, <br> SE26 5QW</a>
+            </li>
+        </ul>
+    </nav>
+</div>
             </div>
         </div>
         <div class="footer-bottom">

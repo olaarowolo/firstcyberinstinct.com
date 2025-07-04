@@ -1,6 +1,6 @@
 #clients {
   background-color: rgba(0, 0, 0, 0.13);
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 /* Slider */
@@ -15,7 +15,7 @@
 .custom-slide img {
   width: 100%;
   display: block;
-  max-width: 70px; /* limit the max width to make logos smaller */
+  max-width: 100px; /* limit the max width to make logos smaller */
   height: auto; /* maintain aspect ratio */
 }
 
@@ -118,6 +118,45 @@
   padding-left: 350px;
   padding-right: 350px;
   box-sizing: border-box;
+}
+
+/* Mobile-first responsive adjustments */
+@media (max-width: 768px) {
+  .client-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .centre {
+    font-size: 1.5rem;
+    padding: 0 10px;
+  }
+  .custom-slide {
+    margin: 0 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .custom-slide img {
+    max-width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .client-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .centre {
+    font-size: 1.25rem;
+    padding: 0 5px;
+  }
+  .custom-slide {
+    margin: 0 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .custom-slide img {
+    max-width: 60px;
+  }
 }
 
 .custom-customer-logos {
